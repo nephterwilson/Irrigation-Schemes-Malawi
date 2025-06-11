@@ -1,0 +1,234 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriTech Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .carousel-bg {
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+ <!-- Fixed Navbar -->
+<header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center text-green-700 font-bold text-xl space-x-3">
+      <img src="./assets/consulting.png" alt="Kabiki & Partners Logo" class="h-12 w-12 object-contain" />
+      <span>🌱 Kabiki & Partners Engineering Services</span>
+    </div>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#home" class="text-gray-700 hover:text-green-600">Home</a>
+      <a href="#services" class="text-gray-700 hover:text-green-600">Services</a>
+      <a href="#projects" class="text-gray-700 hover:text-green-600">Projects</a>
+      <a href="#about" class="text-gray-700 hover:text-green-600">About</a>
+      <a href="#contact" class="text-gray-700 hover:text-green-600">Contact</a>
+      <a href="#" class="text-gray-700 hover:text-green-600">Updates</a>
+    </nav>
+  </div>
+</header>
+
+
+ <!-- Hero Section with Carousel -->
+<section id="home" class="h-screen w-full flex items-center justify-center relative pt-16">
+  <div id="carousel" class="absolute inset-0 carousel-bg z-0"></div>
+  <div class="z-10 text-white text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">
+      Expert Consulting in Irrigation, Water Supply, Dams, Roads, Structures, GIS & Construction Management
+    </h1>
+    <p class="mt-4 text-lg md:text-xl">
+      Delivering design, supervision, project management, and training for civil infrastructure projects.
+    </p>
+    <a href="#contact" class="mt-6 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold">
+      Request Consultation
+    </a>
+  </div>
+  <div class="absolute bottom-4 w-full text-center text-white text-sm">Swipe for more</div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Our Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Irrigation & Drainage Engineering</h3>
+        <p class="text-gray-600">Design and supervision of solar, gravity, motorized, drip, and sprinkler systems, including user training and drainage solutions.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Water Supply Engineering</h3>
+        <p class="text-gray-600">Comprehensive solutions from groundwater studies to pumping stations, pipe networks, and reservoir design.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Dam Engineering</h3>
+        <p class="text-gray-600">Expertise in geotechnical investigations, hydrological analysis, and structural dam design for sustainable water storage.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Roads & Transport Engineering</h3>
+        <p class="text-gray-600">Route planning, geometric and pavement design, road rehabilitation, and transport infrastructure development.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Structural Engineering</h3>
+        <p class="text-gray-600">Structural analysis and design in concrete, steel, and masonry, including audits and rehabilitation for buildings.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Construction Management & GIS</h3>
+        <p class="text-gray-600">Project planning, cost estimation, tendering, contract management, and GIS-based spatial analysis and mapping.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Featured Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-gray-100 rounded-lg p-4 shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="/assets/Solar Irrigation Scheme.png" alt="Irrigation Project" class="w-full rounded mb-4">
+        <h4 class="text-lg font-bold text-green-700">Solar Irrigation Scheme</h4>
+        <p class="text-sm text-gray-600">Designed and supervised off-grid irrigation system in Salima.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-4 shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="/assets/modern-canals.png" alt="Water Supply Project" class="w-full rounded mb-4">
+        <h4 class="text-lg font-bold text-green-700">Rural Water Network Expansion</h4>
+        <p class="text-sm text-gray-600">Engineered a gravity-fed pipeline system in Ntchisi District.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-4 shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="/assets/Small Earthfill Dam Design.png" alt="Dam Engineering Project" class="w-full rounded mb-4">
+        <h4 class="text-lg font-bold text-green-700">Small Earthfill Dam Design</h4>
+        <p class="text-sm text-gray-600">Hydrological and geotechnical studies for dam in Chikwawa.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-4 shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="/assets/Feeder Road Rehabilitation.png" alt="Road Project" class="w-full rounded mb-4">
+        <h4 class="text-lg font-bold text-green-700">Feeder Road Rehabilitation</h4>
+        <p class="text-sm text-gray-600">Upgraded 12km of rural road to all-weather standard in Dedza.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-4 shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="/assets/Structural Audit for Civic Centre.png" alt="Structural Engineering Project" class="w-full rounded mb-4">
+        <h4 class="text-lg font-bold text-green-700">Structural Audit for Civic Centre</h4>
+        <p class="text-sm text-gray-600">Load assessment and redesign in Blantyre’s public infrastructure.</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-4 shadow transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="/assets/modern schemes.png" alt="GIS Project" class="w-full rounded mb-4">
+        <h4 class="text-lg font-bold text-green-700">GIS Mapping for Boreholes</h4>
+        <p class="text-sm text-gray-600">Spatial analysis and mapping for over 150 sites in Mzimba.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects Overview Section -->
+<section id="projects" class="py-20 bg-gray-100 text-center px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-green-700 mb-6">Our Projects</h2>
+    <p class="text-gray-700 text-lg mb-8">
+      Explore our diverse portfolio showcasing innovative engineering solutions in irrigation, water supply, roads, structural design, and more.
+    </p>
+    <a href="https:wtec1.com" 
+       class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-300">
+       Learn More
+    </a>
+  </div>
+</section>
+
+
+
+ <!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-green-700 mb-4">Who We Are</h2>
+    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+      Kabiki and Partners Engineering Services (KPCE) is a registered multi-disciplinary consulting firm, accredited by the Registrar General and the National Construction Industry Council of Malawi since 2018. Our team comprises licensed professional engineers specializing in civil and structural works across public and private sectors.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-green-600 mb-2">Vision</h3>
+    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+      To be a leading regional and international engineering consultancy known for innovation, quality, and timely project delivery.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-green-600 mb-2">Mission</h3>
+    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+      To deliver efficient, sustainable designs and professional project management in civil and structural engineering, adhering to international standards and local regulations.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-green-600 mb-2">Core Values</h3>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Excellence | Integrity | Innovation | Quality Service
+    </p>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-green-700 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-white">Get in Touch</h2>
+    <p class="mb-4 text-lg leading-relaxed">
+      <strong>Managing Director</strong><br>
+      P.O. Box 978, Area 47, Sector | Lilongwe<br>
+      Cell: +265 993 362 415 / 0881 456 650<br>
+      Email: <a href="mailto:innocentk@kabikiandpartners.com" class="underline hover:text-green-300">innocentk@kabikiandpartners.com</a> / 
+      <a href="mailto:info@kabikiandpartners.com" class="underline hover:text-green-300">info@kabikiandpartners.com</a>
+    </p>
+    <a href="#custom-contact-form" 
+       class="inline-block bg-white text-green-700 font-semibold px-8 py-3 rounded-full hover:bg-green-100 transition-colors duration-300">
+       Send Message
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+   <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-6">
+    <p>&copy; 2025  Kabiki & Partners Engineering Services. All rights reserved.</p>
+  </footer>
+
+  <!-- Carousel Script -->
+  <script>
+    const images = [
+      'http://127.0.0.1:5500/assets/Malawi%20irrigating%20land%20from%20a%20river.png',
+      'http://127.0.0.1:5500/assets/experts.png',
+      'http://127.0.0.1:5500/assets/modern-canals.png',
+      'http://127.0.0.1:5500/assets/maize%20production.png',
+      'http://127.0.0.1:5500/assets/modern%20schemes.png',
+      'http://127.0.0.1:5500/assets/Feeder%20Road%20Rehabilitation.png',
+      'http://127.0.0.1:5500/assets/Malawi%20irrigating%20land%20from%20a%20river.png',
+      'http://127.0.0.1:5500/assets/Solar%20Irrigation%20Scheme.png'
+    ];
+    let current = 0;
+    const carousel = document.getElementById('carousel');
+    function updateCarousel() {
+      carousel.style.backgroundImage = `url('${images[current]}')`;
+      current = (current + 1) % images.length;
+    }
+    updateCarousel();
+    setInterval(updateCarousel, 5000);
+  </script>
+</body>
+</html>
