@@ -55,11 +55,10 @@
 
  <section id="home" class="relative h-screen w-full flex flex-col justify-center items-center pt-16 overflow-hidden">
   <!-- Carousel Background: full-cover with dark overlay -->
-  <div id="carousel" class="absolute inset-0 z-0">
-    <!-- Example placeholder background, replace with your carousel implementation -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('./assets');"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
-  </div>
+ <div id="carousel" class="absolute inset-0 z-0 bg-cover bg-center">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60 pointer-events-none"></div>
+</div>
+
 
   <!-- Content container -->
   <div class="relative z-10 text-white text-center max-w-5xl px-6">
@@ -342,17 +341,14 @@
   <!-- Carousel Script -->
   <script>
     const images = [
-      'http://127.0.0.1:5500/assets/Malawi%20irrigating%20land%20from%20a%20river.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/modern-canals.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Rural%20Water%20Network%20Expansion.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/experts.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Roads%20&%20Transport%20Engineering.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Small%20Earthfill%20Dam%20Design.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/maize%20production.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Solar%20Irrigation%20Scheme.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Water%20Supply.png',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Feeder%20Road%20Rehabilitation.jpg',
-      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Construction%20Management%20&%20GIS.jpg'
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Solar-Irrigation-Scheme.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/modern-schemes.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Construction-Management-GIS.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Feeder-Road-Rehabilitation.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Structural-Audit-for-Civic-Centre.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Roads-Transport-Engineering.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/maize-production.jpg',
+      'https://nephterwilson.github.io/Irrigation-Schemes-Malawi/assets/Rural-Water-Network-Expansion.jpg'
     ];
     let current = 0;
     const carousel = document.getElementById('carousel');
