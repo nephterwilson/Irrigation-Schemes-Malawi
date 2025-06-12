@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(trim($_POST["message"]));
 
     $to      = "info@kabikiconsulting.com";
-    $subject = "New Contact Form Submission";
+    $subject = "New Contact Form Submission: Kabikiconsulting";
     $headers = "From: $email\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
 
     $body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
