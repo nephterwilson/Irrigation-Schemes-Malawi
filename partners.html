@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partner With Us - Kabiki Consulting</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+     <link rel="shortcut icon" href="assets/consulting.png" type="image/x-icon">
+     
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -18,7 +21,7 @@
 
   <!-- Section: About Partnership -->
   <section class="py-10 px-4 md:px-20 max-w-screen-xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-6">Why Partner With Kabiki Consulting?</h2>
+    <h2 class="text-2xl font-semibold text-center mb-6">Why Partner With Kabiki Consulting?</h2>
     <p class="text-gray-700 mb-6 leading-relaxed">
       At Kabiki Consulting, we believe in building strong and lasting partnerships with organizations that share our commitment to innovation, excellence, and sustainable development. Our projects range from civil engineering to infrastructure management, and we are always open to new opportunities that align with our values and goals.
     </p>
@@ -67,7 +70,7 @@
   </section>
 
   <!-- Section: Contact Form (for Partnerships) -->
-  <section class="bg-green-100 py-12 px-4 md:px-20 max-w-screen-xl mx-auto">
+  <section id="contact" class="bg-green-100 py-12 px-4 md:px-20 max-w-screen-xl mx-auto">
   <div class="max-w-3xl mx-auto px-6">
     <h2 class="text-3xl font-extrabold text-center mb-6 text-black animate-fade-in-down">
       Get in Touch
@@ -84,10 +87,17 @@
         class="w-full border border-green-300 focus:ring-2 focus:ring-green-600 focus:outline-none p-3 rounded-md transition duration-200" 
         required>
 
-      <input 
+        <input 
         type="email" 
         name="email"
         placeholder="Email Address" 
+        class="w-full border border-green-300 focus:ring-2 focus:ring-green-600 focus:outline-none p-3 rounded-md transition duration-200" 
+        required>
+
+      <input 
+        type="partnership" 
+        name="partnership"
+        placeholder="Area of Partnership" 
         class="w-full border border-green-300 focus:ring-2 focus:ring-green-600 focus:outline-none p-3 rounded-md transition duration-200" 
         required>
 
@@ -119,3 +129,34 @@
 
 </body>
 </html>
+
+<!-- AJAX Script  -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const responseBox = document.getElementById('responseMessage');
+
+  fetch('send-mail.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(text => {
+    if (text.trim() === 'success') {
+      responseBox.textContent = '✅ Thank you! Your message has been sent.';
+      responseBox.classList.add('text-yellow-200');
+      form.reset();
+    } else {
+      responseBox.textContent = '❌ There was a problem. Please try again later.';
+      responseBox.classList.add('text-red-300');
+    }
+  })
+  .catch(error => {
+    responseBox.textContent = '❌ An error occurred. Please try again.';
+    responseBox.classList.add('text-red-300');
+  });
+});
+</script>
